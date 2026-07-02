@@ -1,0 +1,1 @@
+{"nodes":[{"id":"9f26f662240e01fd","type":"text","x":50,"y":50,"width":260,"height":120,"text":"Recurrent\n\n循环的"},{"id":"bccfdc96d9631503","type":"text","x":330,"y":50,"width":260,"height":120,"text":"convolutional\n\n卷积","color":"4"}],"edges":[]}
