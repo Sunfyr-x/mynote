@@ -8,44 +8,10 @@
         "baseURL": "http://localhost:11434/v1"
       },
       "models": {
-        "qwen2.5:7b": {
-          "name": "Qwen2.5 7B",
-          "tool_call": true,
-          "num_ctx": 16384,
-          "num_gpu_layers": 32  // 7B共32层，全塞GPU，避免混合推理不稳定
-        },
-        "deepseek-r1:8b": {
-          "name": "DeepSeek R1 8B",
-          "reasoning": true,
-          "tool_call": true,
-          "extraBody": {"think": true},
-          "num_ctx": 8192,  // 天选3如果是6G显存可以开到16384
-          "num_gpu_layers": 28  // 8B约32层，塞28层到GPU，比默认的70%更高
-        },
-        "MFDoom/deepseek-r1-tool-calling:7b": {
-          "name": "DeepSeek R1 7B (Tool-Calling)",
-          "reasoning": true,
-          "tool_call": true,
-          "extraBody": {"think": true},
-          "num_ctx": 16384,
-          "num_gpu_layers": 32
+        "qwen3:8b": {
+          "name": "Qwen3 8B"
         }
       }
-    }
-  },
-  "agent": {
-    "build": {
-      "permission": {"edit": "allow", "bash": "allow", "webfetch": "deny"},
-      "context": {
-        "truncate": {
-          "keep_recent": 5,  // 只保留最近5轮对话，更早的自动压缩
-          "compress_old": true,  // 压缩旧对话，只保留核心指令和结果
-          "exclude_reasoning": true  // 旧的推理思考内容直接丢弃，只留最终回答（省大量token）
-        }
-      }
-    },
-    "experimental": {
-      "batch_tool": true  // 把多个工具调用合并成一个请求，减少上下文重复占用
     }
   }
 }
