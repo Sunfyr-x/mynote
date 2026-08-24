@@ -1,0 +1,18 @@
+{
+  "authMethod": "oauth",
+  "githubToken": "",
+  "githubUsername": "",
+  "dataSource": "local",
+  "localRepoRoot": "",
+  "scanDepth": 2,
+  "demoMode": false,
+  "showLegend": true,
+  "tooltipStyle": "standard",
+  "selectedYear": 2026,
+  "sizePreset": "medium",
+  "defaultView": "year",
+  "palette": "classic",
+  "statsStyle": "default",
+  "dailyNoteFolder": "",
+  "dailyNoteDateFormat": "YYYY-MM-DD"
+}

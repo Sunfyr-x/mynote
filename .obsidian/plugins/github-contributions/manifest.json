@@ -1,0 +1,10 @@
+{
+  "id": "github-contributions",
+  "name": "GitHub Contributions",
+  "version": "1.0.7",
+  "minAppVersion": "1.7.2",
+  "description": "View GitHub and local Git contributions directly in the sidebar with streak tracking, repository breakdowns, color palettes, and daily note integration.",
+  "author": "gearheaded",
+  "authorUrl": "https://github.com/gearheaded",
+  "isDesktopOnly": false
+}

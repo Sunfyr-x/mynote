@@ -1,0 +1,43 @@
+{
+  "vocabularyBooks": [
+    {
+      "path": "单词本.canvas",
+      "name": "单词本",
+      "enabled": true
+    }
+  ],
+  "studyProgress": {},
+  "masteredMigrationVersion": 1,
+  "showDefinitionOnHover": true,
+  "enableAutoHighlight": true,
+  "highlightStyle": "background",
+  "enableMasteredFeature": true,
+  "showMasteredInSidebar": true,
+  "blurDefinitions": false,
+  "ttsTemplate": "https://dict.youdao.com/dictvoice?audio={{word}}&type=2",
+  "pronunciationVariant": "us",
+  "aiService": {
+    "provider": "openai-compatible",
+    "apiUrl": "http://127.0.0.1:8081/v1/chat/completions",
+    "apiKey": "sk-7cbb4dc0c8ef40768bde8352c09bf2b8",
+    "model": "deepseek-v4-flash",
+    "extraParams": "{}"
+  },
+  "aiDefinition": {
+    "enabled": true,
+    "prompt": "Please provide a concise definition for the word \"{{word}}\" based on this context:\n\nSentence: {{sentence}}\n\nFormat:\n1) Part of speech\n2) English definition\n3) Chinese translation\n4) Example sentence (use the original sentence if appropriate)"
+  },
+  "autoLayoutEnabled": true,
+  "cardWidth": 260,
+  "cardHeight": 120,
+  "highlightMode": "all",
+  "highlightPaths": "",
+  "fileNodeParseMode": "filename-with-alias",
+  "enableSectionTabs": true,
+  "sidebarDefaultDisplayMode": "detail",
+  "selectionTranslate": {
+    "enabled": true,
+    "targetLang": "zh-CN",
+    "prompt": "Translate the following text to {{to}}. Only return the translation, no explanation.\n\nText: {{text}}"
+  }
+}
