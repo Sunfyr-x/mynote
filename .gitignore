@@ -1,3 +1,4 @@
+*.pdf
 content/.obsidian/
 content/教材/
 node_modules/
