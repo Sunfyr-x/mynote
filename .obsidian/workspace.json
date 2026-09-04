@@ -36,22 +36,6 @@
             }
           }
         ]
-      },
-      {
-        "id": "86929f3dc4f4a303",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "8d135a42879489a7",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "新标签页"
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
